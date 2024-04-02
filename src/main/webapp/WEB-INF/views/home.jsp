@@ -20,8 +20,9 @@
 	<a href="ex3?dueDate=2024-04-02">날짜전달1</a><br/>
 	<a href="ex3?dueDate=24-04-02">날짜전달2</a><br/>
 	<a href="ex3">날짜전달3</a><br/>
-	<a href="ex3">Checked값 전달</a><br/>
-	<a href="ex2">Checked값 전달 하지 않음</a><br/>
+	<a href="ex4?checked=on">Checked값 on 전달</a><br/>
+	<a href="ex4?checked=off">Checked값 off 전달</a><br/>
+	<a href="ex4">Checked값 off 전달</a><br/>
 
 <P>  The time on the server is ${serverTime}. </P>
 </body>

@@ -28,11 +28,12 @@
         <beans:property name="formatters">
             <beans:set>
                 <beans:bean class="org.kosa.hello.formatter.LocalDateFormatter"/>
+                <beans:bean class="org.kosa.hello.formatter.CheckboxFormatter"/>
             </beans:set>
         </beans:property>
     </beans:bean>
 
-    <annotation-driven  conversion-service="conversionService" />
+    <annotation-driven conversion-service="conversionService" />
 	
 	
 	

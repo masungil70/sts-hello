@@ -36,4 +36,10 @@ public class SampleController {
         log.info("ex3........");
         log.info("dueDate: " + dueDate);
     }
+    
+    @GetMapping("/ex4")
+    public void ex4(Boolean checked){
+        log.info("ex4........");
+        log.info("checked: " + checked);
+    }
 }
