@@ -23,6 +23,17 @@
 	
 	<context:component-scan base-package="org.kosa.hello" />
 	
+	<!--  사용자 format 클래스 설정 -->
+	<beans:bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <beans:property name="formatters">
+            <beans:set>
+                <beans:bean class="org.kosa.hello.formatter.LocalDateFormatter"/>
+            </beans:set>
+        </beans:property>
+    </beans:bean>
+
+    <annotation-driven  conversion-service="conversionService" />
+	
 	
 	
 </beans:beans>

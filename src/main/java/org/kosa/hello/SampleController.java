@@ -1,5 +1,7 @@
 package org.kosa.hello;
 
+import java.time.LocalDate;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import lombok.extern.slf4j.Slf4j;
 
-//ë¡œê·¸ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•œ ì–´ë…¸í…Œì´ì…˜ 
+//·Î±× Ãâ·ÂÀ» À§ÇÑ ¾î³ÊÅ×ÀÌ¼Ç ¼³Á¤  
 @Slf4j
 @Controller
 public class SampleController {
@@ -29,5 +31,9 @@ public class SampleController {
         log.info("age: " + age);
     }
 
-
+    @GetMapping("/ex3")
+    public void ex3(LocalDate dueDate){
+        log.info("ex3........");
+        log.info("dueDate: " + dueDate);
+    }
 }
