@@ -22,6 +22,15 @@
 			<param-name>contextConfigLocation</param-name>
 			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
 		</init-param>
+		<!-- noHandlerFoundException 이 발생한 것을 잡아줄 수 있도록 설정한다
+		500에러의 경우 Internal Server Error이므로 @ExceptionHandler를 이용해서 처리가 가능하다.
+		404에러는 잘못된 URL을 호출할 때 나타나므로 500에러와는 다르게 처리해야한다.
+		-->
+		<init-param>
+			<param-name>throwExceptionIfNoHandlerFound</param-name>
+			<param-value>true</param-value>
+		</init-param>
+			
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 		
@@ -44,4 +53,6 @@
         <filter-name>encoding</filter-name>
         <servlet-name>appServlet</servlet-name>
     </filter-mapping>
+
+
 </web-app>

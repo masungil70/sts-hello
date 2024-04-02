@@ -24,6 +24,7 @@
 	<a href="ex4?checked=off">Checked값 off 전달</a><br/>
 	<a href="ex4">Checked값 off 전달</a><br/>
 	<a href="ex5">리다이렉트로 인자 전달방법 </a><br/>
+	<a href="ex8">존재하지 않은 URL로 출시 처리 </a><br/>
 
 <P>  The time on the server is ${serverTime}. </P>
 </body>
