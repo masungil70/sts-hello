@@ -27,6 +27,7 @@
 	<a href="ex8">존재하지 않은 URL로 출시 처리 </a><br/>
 	<hr/>
 	<a href="time/getNow">DB 연동 후 시간 얻기 </a><br/>
+	<a href="userInsertForm">회원가입</a><br/>
 
 <P>  The time on the server is ${serverTime}. </P>
 </body>
